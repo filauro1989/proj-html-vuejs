@@ -28,9 +28,9 @@ export default {
 
 
 #app {
-  color: white;
-  font-family: 'Dongle', sans-serif;
-  font-size: 100%;
+  color: black;
+  // font-family: 'Dongle', sans-serif;
+  // font-size: 2em;
 }
 
 
