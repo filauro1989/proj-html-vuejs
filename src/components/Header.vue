@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotroner container-fluid">
+        <div class="jumbotroner container-fluid background-1">
             <div class="jumbo-left-box">
                 <h6 class="text-uppercase">17 years of experience</h6>
                 <div class="main-title">
@@ -53,7 +53,7 @@
         </div>
         <div class="jumbo-selector d-inline">
             <div class="selector-one">01</div>
-            <div class="selector-two">02</div>
+            <div class="selector-two active">02</div>
             <div class="selector-three">03</div>
         </div>
     </div>
@@ -106,10 +106,12 @@ export default {
             font-size: 0.9em;
         }
     }
+    .background-1 {
+            background-image: url(../assets/img/Group-35-2x.png);
+        };
     .jumbotroner {
         background-color: #FAFAFA;
         height: 100vh;
-        background-image: url(../assets/img/Group-35-2x.png);
         background-position-y: 50%;
         background-position-x: 180%;
         background-repeat: no-repeat;
@@ -165,10 +167,15 @@ export default {
             background-image: linear-gradient(to right, #0E0E0EB3 , black);
             border-radius: 2em;
             > div{
-                padding: 0.4em 1.3em;
+                font-size: 1.2em;
+                padding: 0.3em 1.1em;
                 font-weight: bold;
                 color: #9F9F9F;
                 display: inline-block;
+            };
+            > div.active {
+                background-image: linear-gradient(to right, #96E15F , #0CDAA2);
+                border-radius: 2em;
             }
     }
 
