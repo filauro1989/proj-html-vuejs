@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="position-relative">
         <div class="header-top container-fluid d-flex">
             <div class="header-wrapper container-85 d-flex justify-content-between mx-auto">
                 <div class="phone-number d-flex align-items-center">
@@ -34,6 +34,28 @@
                 </div>
             </div>
         </div>
+        <div class="jumbotroner container-fluid">
+            <div class="jumbo-left-box">
+                <h6 class="text-uppercase">17 years of experience</h6>
+                <div class="main-title">
+                    <h1 class="mt-focus">Focus on Your <span class="mt-busi">Business</span></h1>   
+                </div>
+                <div class="jumbo-line"></div>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
+                <div class="btn text-uppercase">Read More</div>
+                <div class="jumbo-social text-uppercase">
+                    <a href="">Facebook</a><span> - </span>
+                    <a href="">Instagram</a><span> - </span>
+                    <a href="">Youtube</a><span> - </span>
+                    <a href="">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="jumbo-selector d-inline">
+            <div class="selector-one">01</div>
+            <div class="selector-two">02</div>
+            <div class="selector-three">03</div>
+        </div>
     </div>
 </template>
 
@@ -61,7 +83,7 @@ export default {
         }
     }
     .header-navbar {
-        padding: 1.5em 0;
+        padding: 1em 0;
         .navbar .logo img {
             height: 45px;
         };
@@ -83,6 +105,71 @@ export default {
             padding: 1.3em;
             font-size: 0.9em;
         }
+    }
+    .jumbotroner {
+        background-color: #FAFAFA;
+        height: 100vh;
+        background-image: url(../assets/img/Group-35-2x.png);
+        background-position-y: 50%;
+        background-position-x: 180%;
+        background-repeat: no-repeat;
+        .jumbo-left-box {
+            width: 40%;
+            margin-left: 8em;
+            padding-top: 9em;
+            h6 {
+                letter-spacing: 8px;
+                background: -webkit-linear-gradient(#96E15F, #0CDAA2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            };
+            .main-title {
+                .mt-focus {
+                    color: black;
+                    font-size: 5em;
+                    line-height: 1.1em
+                };
+                .mt-busi {
+                    color: #00D9A6;
+                }
+            };
+            .jumbo-line {
+                height: 5px;
+                width: 4em;
+                border-radius: 5px;
+                margin: 3em 0;
+                background-image: linear-gradient(to right, #96E15F , #0CDAA2);
+            };
+            .btn {
+                background-image: linear-gradient(to right, #0E0E0EB3 , black);
+                padding: 0.8em 3em;
+                color: white;
+                border-radius: 2em;
+                margin-top: 5em;
+            };
+            .jumbo-social {
+                padding-top: 8em;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        };
+    }
+    .jumbo-selector {
+            position: absolute;
+            bottom: 12%;
+            left: 40%;
+            padding: 0.5em;
+            background-image: linear-gradient(to right, #0E0E0EB3 , black);
+            border-radius: 2em;
+            > div{
+                padding: 0.4em 1.3em;
+                font-weight: bold;
+                color: #9F9F9F;
+                display: inline-block;
+            }
     }
 
 </style>
