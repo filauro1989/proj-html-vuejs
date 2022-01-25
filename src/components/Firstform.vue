@@ -72,10 +72,21 @@ export default {
         gap: 2.5em;
         margin-left: 5em;
     }
+    .form-card:hover {
+        background-image: $green-gradient;
+        color: white;
+        i {
+            color: white;
+        };
+        p {
+            color: white;
+        }
+    }
     .form-card {
         width: calc(50% - 2.5em);
         border-radius: 20px;
         box-shadow: 0px 0px 46px rgba(0, 0, 255, .2);
+        cursor: pointer;
         .card-wrapper {
             padding: 3.5em
         };

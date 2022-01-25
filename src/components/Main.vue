@@ -1,5 +1,8 @@
 <template>
-    <Firstform />
+    <div class="wrapper">
+        <Firstform />
+        <Secondform />
+    </div>
 
 </template>
 
