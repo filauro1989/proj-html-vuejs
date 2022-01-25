@@ -41,7 +41,7 @@
             <div class="jumbo-left-box">
                 <h6 class="text-uppercase">17 years of experience</h6>
                 <div class="main-title">
-                    <h1 class="mt-focus">Focus on Your <span class="mt-busi">Business</span></h1>   
+                    <h1 class="mt-black">Focus on Your <span class="mt-green">Business</span></h1>   
                 </div>
                 <div class="jumbo-line"></div>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
@@ -70,6 +70,8 @@ export default {
 </script>
 
 <style lang="scss">
+    @import "../assets/scss/partials/_variables.scss";
+
     .container-85 {
         width: 85%;
     }
@@ -123,31 +125,20 @@ export default {
             width: 40%;
             margin-left: 8em;
             padding-top: 9em;
+            .main-title {
+                .mt-black {
+                    font-size: 5em;
+                    line-height: 1.1em
+                };
+            };
             h6 {
                 letter-spacing: 8px;
                 background: -webkit-linear-gradient(#96E15F, #0CDAA2);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             };
-            .main-title {
-                .mt-focus {
-                    color: black;
-                    font-size: 5em;
-                    line-height: 1.1em
-                };
-                .mt-busi {
-                    color: #00D9A6;
-                }
-            };
-            .jumbo-line {
-                height: 5px;
-                width: 4em;
-                border-radius: 5px;
-                margin: 3em 0;
-                background-image: linear-gradient(to right, #96E15F , #0CDAA2);
-            };
             .btn {
-                background-image: linear-gradient(to right, #0E0E0EB3 , black);
+                background-image: $black-gradient;
                 padding: 0.8em 3em;
                 color: white;
                 border-radius: 2em;

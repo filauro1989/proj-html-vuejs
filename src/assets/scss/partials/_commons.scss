@@ -1,0 +1,33 @@
+.w-35 {
+    width: 35%;
+}
+.w-65 {
+    width: 65%;
+}
+.mt-black {
+    color: black;
+    font-size: 3.5em;
+    line-height: 1.4em
+}
+.mt-green {
+    color: $green-text;
+}
+.light-grey-text {
+    color: $light-grey-text;
+}
+.grey-text {
+    color: $grey-text;
+}
+.jumbo-line {
+    height: 5px;
+    width: 4em;
+    border-radius: 5px;
+    margin: 3em 0;
+    background-image: linear-gradient(to right, #96E15F , #0CDAA2);
+}
+.rotate {
+    transform: rotate(-90deg);
+    right: -60px;
+    top: 50%;
+    font-weight: bold;
+}

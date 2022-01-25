@@ -1,10 +1,13 @@
 <template>
-    <div>asd</div>
+    <Firstform />
 
 </template>
 
 <script>
+import Firstform from "./Firstform.vue";
+
 export default {
+    components: { Firstform },
     name: 'Main',
 }
 </script>
