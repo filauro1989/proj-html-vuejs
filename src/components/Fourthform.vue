@@ -59,9 +59,9 @@ export default {
                 .stats {
                     padding-left: 44%;
                     padding-top: 22%;
-                    color: #F9F9F9;
+                    color: $white-text;
                     .happy-clients {
-                        border-left: 1px solid #F9F9F9;
+                        border-left: 1px solid $white-text;
                     }
                     h1 {
                         font-weight: normal;

@@ -87,6 +87,7 @@ export default {
         width: calc(50% - 2.5em);
         border-radius: 20px;
         box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
+
         cursor: pointer;
         .card-wrapper {
             padding: 3.5em
