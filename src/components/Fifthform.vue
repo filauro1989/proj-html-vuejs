@@ -17,7 +17,51 @@
                     </div>
 
                     <div class="top-price w-100 h-100 d-flex align-items-end justify-content-center">
-                        <h1>$ 13 /Design</h1>
+                        <h1>$ 13 <span>/ Design</span></h1>
+                    </div>
+                </div>
+                <div class="plan-card-bottom">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Creative Design Enabled</li>
+                        <li><i class="fas fa-check"></i> Vibrant Color Usage</li>
+                        <li><i class="fas fa-check"></i> Eye Catching Design</li>
+                        <li><i class="fas fa-check"></i> Extreme Typography</li>
+                        <li><i class="fas fa-check"></i> Exceptional Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan-card d-flex flex-column">
+                <div class="plan-card-top plan-card-top-green position-relative">
+
+                    <div class="top-plan w-100 d-flex flex-column align-items-center position-absolute">
+                        <h2 class="text-uppercase">Development</h2>
+                        <p>WordPress Projects</p>
+                    </div>
+
+                    <div class="top-price w-100 h-100 d-flex align-items-end justify-content-center">
+                        <h1>$ 15 <span>/ Project</span></h1>
+                    </div>
+                </div>
+                <div class="plan-card-bottom">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Creative Design Enabled</li>
+                        <li><i class="fas fa-check"></i> Vibrant Color Usage</li>
+                        <li><i class="fas fa-check"></i> Eye Catching Design</li>
+                        <li><i class="fas fa-check"></i> Extreme Typography</li>
+                        <li><i class="fas fa-check"></i> Exceptional Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan-card d-flex flex-column">
+                <div class="plan-card-top position-relative">
+
+                    <div class="top-plan w-100 d-flex flex-column align-items-center position-absolute">
+                        <h2 class="text-uppercase">Seo</h2>
+                        <p>Web Product</p>
+                    </div>
+
+                    <div class="top-price w-100 h-100 d-flex align-items-end justify-content-center">
+                        <h1>$ 10 <span>/ Product</span></h1>
                     </div>
                 </div>
                 <div class="plan-card-bottom">
@@ -56,6 +100,9 @@ export default {
             box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
             border-radius: 15px;
             overflow: hidden;
+            .plan-card-top-green.plan-card-top {
+                background-image: $green-gradient;
+            }
             .plan-card-top {
                 background-image: $black-gradient;
                 height: 230px;
@@ -68,6 +115,9 @@ export default {
                     h1 {
                         padding-bottom: 0.8em;
                         color: $white-text;
+                    }
+                    span {
+                        font-size: 0.5em;
                     }
                 }
             }
