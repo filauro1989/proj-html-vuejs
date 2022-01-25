@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid position-relative">
-        <div class="wrapper container-85 d-flex mx-auto">
+        <div class="wrapper w-85 d-flex mx-auto">
             <div class="left-box w-35">
                 <div class="main-title">
                     <h1 class="mt-black">We Are Here To Make Your <span class="mt-green">Website</span> Look More <span class="mt-green">Elegant</span> And Stylish!</h1>   
@@ -66,7 +66,7 @@ export default {
                 color: white;
                 border-radius: 2em;
                 margin-top: 2em;
-            };
+        };
     }
     .right-box {
         gap: 2.5em;
