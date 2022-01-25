@@ -1,5 +1,6 @@
 <template>
     <div class="position-relative">
+        <!-- black top header -->
         <div class="header-top container-fluid d-flex">
             <div class="header-wrapper container-85 d-flex justify-content-between mx-auto">
                 <div class="phone-number d-flex align-items-center">
@@ -13,6 +14,7 @@
                 </div>
             </div>
         </div>
+        <!-- navbar -->
         <div class="header-navbar container-fluid">
             <div class="navbar container-85 mx-auto">
                 <div class="logo">
@@ -34,6 +36,7 @@
                 </div>
             </div>
         </div>
+        <!-- jumbotron -->
         <div class="jumbotroner container-fluid background-1">
             <div class="jumbo-left-box">
                 <h6 class="text-uppercase">17 years of experience</h6>
@@ -51,6 +54,7 @@
                 </div>
             </div>
         </div>
+        <!-- slider sfondo -->
         <div class="jumbo-selector d-inline">
             <div class="selector-one">01</div>
             <div class="selector-two active">02</div>
