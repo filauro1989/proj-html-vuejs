@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="main-wrapper">
         <Firstform />
         <Secondform />
     </div>
@@ -8,13 +8,18 @@
 
 <script>
 import Firstform from "./Firstform.vue";
+import Secondform from "./Secondform.vue";
 
 export default {
-    components: { Firstform },
+    components: { 
+        Firstform,
+        Secondform,
+    },
     name: 'Main',
 }
 </script>
 
+
 <style lang="scss">
-    
+
 </style>

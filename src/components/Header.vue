@@ -77,7 +77,7 @@ export default {
     }
     .header-top {
         height: 40px;
-        background-color: #3D3D3D;
+        background-color: $black-gradient;
         color: white;
         .phone-number {
             i {
@@ -116,7 +116,7 @@ export default {
             background-image: url(../assets/img/Group-35-2x.png);
         };
     .jumbotroner {
-        background-color: #FAFAFA;
+        background-color: $background-grey;
         height: 100vh;
         background-position-y: 50%;
         background-position-x: 180%;

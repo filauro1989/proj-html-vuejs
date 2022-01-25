@@ -31,6 +31,9 @@ export default {
   color: black;
   // font-family: 'Dongle', sans-serif;
   // font-size: 2em;
+  .container-fluid {
+    padding-left: 0;
+  }
 }
 
 </style>
