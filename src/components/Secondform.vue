@@ -5,11 +5,11 @@
         </div>
         <div class="right-box w-35">
             <div class="main-title">
-                    <h1 class="mt-black">learn more about our <span class="mt-green">missions</span></h1>   
-                </div>
-                <div class="jumbo-line"></div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
-                <div class="btn text-uppercase">View All</div>
+                <h1 class="mt-black">learn more about our <span class="mt-green">missions</span></h1>   
+            </div>
+            <div class="jumbo-line"></div>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
+            <div class="btn text-uppercase">View All</div>
         </div>
         <div class="img-wrap-clean"></div>
     </div>
