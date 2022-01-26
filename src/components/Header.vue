@@ -22,12 +22,11 @@
                 </div>
                 <div class="navbar-menu text-uppercase">
                     <ul class="navbar-nav d-flex flex-row">
-                        <li class="nav-item">Home</li>
-                        <li class="nav-item">About</li>
-                        <li class="nav-item">Services</li>
-                        <li class="nav-item">Showcase</li>
-                        <li class="nav-item">Blog</li>
-                        <li class="nav-item">Contact</li>
+                        <li v-for="(navitem, index) in navlist" :key="index" class="nav-item">
+                            <a :href="navitem.url">
+                                {{navitem.name}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-bar-search text-uppercase">
@@ -66,6 +65,37 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return {
+            navlist:[
+
+                {
+                    name: 'home',
+                    url: '#',
+                },
+                {
+                    name: 'about',
+                    url: '#',
+                },
+                {
+                    name: 'services',
+                    url: '#',
+                },
+                {
+                    name: 'showcase',
+                    url: '#',
+                },
+                {
+                    name: 'blog',
+                    url: '#',
+                },
+                {
+                    name: 'contact',
+                    url: '#',
+                },
+            ]
+        }
+    },
 }
 </script>
 
@@ -77,7 +107,7 @@ export default {
     }
     .header-top {
         height: 40px;
-        background-color: $black-gradient;
+        background-image: $black-gradient;
         color: white;
         .phone-number {
             i {
@@ -110,6 +140,10 @@ export default {
         li {
             padding: 1.3em;
             font-size: 0.9em;
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
     }
     .background-1 {
