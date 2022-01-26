@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid eighth-form">
-        <div class="white-wrapper w-100">
+        <div class="white-grey-wrapper w-100">
             <div class="eighth-card-box w-85 mx-auto d-flex justify-content-around">
                 <div class="eighth-card w-45 d-flex flex-column align-items-center">
                     <h5>Are You Ready?</h5>
@@ -18,9 +18,26 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grey-wrapper w-100">
-            
+            <div class="sponsors w-85 mx-auto d-flex justify-content-around">
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-1-2x.png" alt="">
+                </div>
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-9-2x.png" alt="">
+                </div>
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-7-2x.png" alt="">
+                </div>
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-3-2x.png" alt="">
+                </div>
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-4-2x.png" alt="">
+                </div>
+                <div class="sponsors-card w-15 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/client-5-2x.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -35,9 +52,10 @@ export default {
     @import "../assets/scss/partials/_variables.scss";
 
     .eighth-form {
-        .white-wrapper {
-            height: 400px;
+        background-image: linear-gradient(to top, $background-grey, $background-grey 50%, white 50%, white);
+        .white-grey-wrapper {
             .eighth-card-box {
+                padding-top:13em;
                 .eighth-card.eighth-card-green{
                     background-image: $green-gradient;
                 }
@@ -81,10 +99,12 @@ export default {
                     }
                 }
             }
-        }
-        .grey-wrapper {
-            height: 400px;
-            background-color: $background-grey;
+            .sponsors {
+                padding: 5em 0;
+                .sponsors-card {
+                    padding: 3em 0;
+                }
+            }
         }
     }
 

@@ -56,7 +56,7 @@ export default {
 
     .seventh-form {
         .wrapper {
-            // padding-bottom: 0;
+            padding-bottom: 0;
         }
         .seventh-box {
             .rotated-text {
