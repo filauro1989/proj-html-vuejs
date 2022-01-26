@@ -52,3 +52,7 @@
     top: 50%;
     font-weight: bold;
 }
+.btn:hover {
+    background-image: $black-gradient;
+    color: white !important;
+};

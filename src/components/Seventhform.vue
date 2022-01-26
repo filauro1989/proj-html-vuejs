@@ -111,12 +111,16 @@ export default {
         .btn-container {
             padding-top: 3em;
             .btn {
-                background-image: $black-gradient;
+                box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
+                background-image: $green-gradient;
                 padding: 0.8em 3em;
                 color: white;
                 border-radius: 2em;
                 margin-top: 6em;
-            };
+            }
+            .btn:hover {
+                background-image: $black-gradient;
+            }
         }
     }
 

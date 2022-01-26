@@ -118,8 +118,8 @@ export default {
             ],
             // USO IL REQUIRE PERCHE' NN FUNZIONA SE METTO IL LINK NELLA FUNZIONE
             images: [
-                require('../assets/img/Group-35-2x.png'),
                 require('../assets/img/Group-36-2x.png'),
+                require('../assets/img/Group-35-2x.png'),
                 require('../assets/img/Group-40-2x.png'),
             ]
         }
@@ -215,7 +215,7 @@ export default {
             };
             .btn {
                 box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
-                background-image: $black-gradient;
+                background-image: $green-gradient;;
                 padding: 0.8em 3em;
                 color: white;
                 border-radius: 2em;

@@ -60,7 +60,10 @@ export default {
                 color: white;
                 border-radius: 2em;
                 margin-top: 2em;
-            };
+            }
+            .btn:hover {
+                background-image: $black-gradient;
+            }
             .main-title {
                 h1 {
                     width: 60%
