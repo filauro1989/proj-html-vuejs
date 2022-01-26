@@ -94,6 +94,9 @@ export default {
             p {
                 color: $grey-text;
             }
+            .main-title {
+                padding-top: 6em;
+            }
         }
         .plan-card {
             width: 20%;
