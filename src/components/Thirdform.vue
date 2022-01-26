@@ -14,7 +14,11 @@
         </div>
         <div class="showroom w-85 mx-auto position-relative d-flex flex-wrap">
             <div v-for="(image, index) in showcase" :key="index" class="showroom-img-box">
-                <img class="" :src="image.url" alt="">
+                <img :src="image.url" alt="">
+                <div class="showroom-text position-absolute">
+                    <h3>{{ image.name }}</h3>
+                    <h5 class="text-uppercase">{{ image.info }}</h5>
+                </div>
             </div>
 
             <div class="rotated-text position-absolute rotate">17 years of experience helping people for best solutions</div>
@@ -95,6 +99,16 @@ export default {
             margin-left: 20px;
             margin-bottom: 0;
         };
+        .showroom .showroom-text {
+            display: none;
+            bottom: 30px;
+            left: 35px;
+            color: $white-text;
+        }
+        .showroom-img-box:hover .showroom-text {
+            display: block;
+            z-index: 4;
+        }
         .showroom .showroom-img-box{
             width: calc(25% - 1em);
             position: relative;
@@ -112,7 +126,6 @@ export default {
         .showroom-img-box:hover {
             transform: scale(1.1);
             z-index: 3;
-
         }
         .showroom-img-box:hover:after {
             content: '';
