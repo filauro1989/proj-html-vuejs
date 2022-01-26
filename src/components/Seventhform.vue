@@ -7,7 +7,8 @@
                 </div>
                 <div class="jumbo-line"></div>
             </div>
-            <div class="seventh-box d-flex justify-content-around">
+            <div class="seventh-box d-flex justify-content-around position-relative">
+                <div class="rotated-text position-absolute rotate">17 years of experience helping people for best solutions</div>
                 <div id="seventh-first-card" class="seventh-card w-30 rounded position-relative">
                     <div class="card-bottom rounded position-absolute">
                         <p>May24, 2018 by Alex</p>
@@ -54,7 +55,17 @@ export default {
     @import "../assets/scss/partials/_variables.scss";
 
     .seventh-form {
+        .wrapper {
+            // padding-bottom: 0;
+        }
         .seventh-box {
+            .rotated-text {
+                width: 500px;
+                display: inline;
+                text-align: center;
+                left: -290px;
+                top: 210px;
+            }
             #seventh-first-card {
                 background-image: url('../assets/img/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg');
             }
