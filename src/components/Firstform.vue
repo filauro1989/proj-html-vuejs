@@ -61,6 +61,7 @@ export default {
         margin-right: 2em;
         margin-top: 3em;
         .btn {
+                box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
                 background-image: $green-gradient;
                 padding: 0.8em 3em;
                 color: white;

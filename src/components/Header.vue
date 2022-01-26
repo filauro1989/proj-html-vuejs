@@ -36,7 +36,7 @@
             </div>
         </div>
         <!-- jumbotron -->
-        <div class="jumbotroner container-fluid background-1">
+        <div class="jumbotroner container-fluid background-0">
             <div class="jumbo-left-box">
                 <h6 class="text-uppercase">17 years of experience</h6>
                 <div class="main-title">
@@ -46,7 +46,7 @@
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
                 <div class="btn text-uppercase">Read More</div>
                 <div class="jumbo-social text-uppercase">
-                    <a href="">Facebook</a><span> - </span>
+                    <a href="">Facebook<span> - </span></a>
                     <a href="">Instagram</a><span> - </span>
                     <a href="">Youtube</a><span> - </span>
                     <a href="">Twitter</a>
@@ -93,7 +93,35 @@ export default {
                     name: 'contact',
                     url: '#',
                 },
+            ],
+            social: [
+                {
+                    name: 'Facebook',
+                    url: '#',
+                },
+                {
+                    name: 'Instagram',
+                    url: '#',
+                },
+                {
+                    name: 'Youtube',
+                    url: '#',
+                },
+                {
+                    name: 'Twitter',
+                    url: '#',
+                },
             ]
+        }
+    },
+    methods: {
+        changeJumbo() {
+            let jumbotron = document.querySelector('.jumbotroner');
+            console.log(jumbotron);
+            if (jumbotron.classList.contains('background-0')) {
+                jumbotron.classList.remove('background-0');
+                jumbotron.classList.add('background-1');
+            }
         }
     },
 }
@@ -146,8 +174,14 @@ export default {
             }
         }
     }
+    .background-0 {
+            background-image: url(../assets/img/Group-36-2x.png);
+        };
     .background-1 {
             background-image: url(../assets/img/Group-35-2x.png);
+        };
+    .background-2 {
+            background-image: url(../assets/img/Group-40-2x.png);
         };
     .jumbotroner {
         background-color: $background-grey;
@@ -172,6 +206,7 @@ export default {
                 -webkit-text-fill-color: transparent;
             };
             .btn {
+                box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
                 background-image: $black-gradient;
                 padding: 0.8em 3em;
                 color: white;

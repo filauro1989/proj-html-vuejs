@@ -15,12 +15,9 @@
                     <div class="jumbo-line"></div>
                     <div class="ul-wrapper d-flex justify-content-center">
                         <ul class="text-center">
-                            <li>Careers</li>
-                            <li>News</li>
-                            <li>Terms of use</li>
-                            <li>Privacy Projects</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li v-for="(link, index) in links" :key="index">
+                                <a :href="link.url">{{link.name}}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -63,6 +60,36 @@
 <script>
 export default {
     name: 'Footer',
+    data() {
+        return {
+            links: [
+                {
+                    name: 'Careers',
+                    url: '#',
+                },
+                {
+                    name: 'News',
+                    url: '#',
+                },
+                {
+                    name: 'Terms of Use',
+                    url: '#',
+                },
+                {
+                    name: 'Privacy Project',
+                    url: '#',
+                },
+                {
+                    name: 'About',
+                    url: '#',
+                },
+                {
+                    name: 'Contact',
+                    url: '#',
+                },
+            ],
+        }
+    },
 }
 </script>
 
@@ -96,6 +123,10 @@ export default {
             .ul-wrapper {
                 ul {
                     list-style-type: none;
+                    li a {
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
             }
             .contact-name {

@@ -60,6 +60,7 @@ export default {
             width: calc(25% - 1em);
         }
         .btn {
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
             background-image: $green-gradient;
             padding: 0.8em 3em;
             color: white;
