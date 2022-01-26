@@ -6,6 +6,7 @@
         <Fourthform />
         <Fifthform />
         <Sixthform />
+        <Seventhform />
     </div>
 
 </template>
@@ -17,6 +18,7 @@ import Thirdform from "./Thirdform.vue";
 import Fourthform from "./Fourthform.vue";
 import Fifthform from "./Fifthform.vue";
 import Sixthform from "./Sixthform.vue";
+import Seventhform from "./Seventhform.vue";
 
 export default {
     components: { 
@@ -26,6 +28,7 @@ export default {
         Fourthform,
         Fifthform,
         Sixthform,
+        Seventhform,
     },
     name: 'Main',
 }
