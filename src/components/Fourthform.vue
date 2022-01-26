@@ -98,6 +98,7 @@ export default {
                             padding-left: 0;
                             li {
                                 color: $grey-text;
+                                padding-top: 1em;
                                 i {
                                     color: $green-text;
                                 }

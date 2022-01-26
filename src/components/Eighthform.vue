@@ -63,6 +63,7 @@ export default {
                     background-image: $black-gradient;
                     border-radius: 15px;
                     padding: 4em;
+                    box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
                     h5 {
                         color: $light-grey-text;
                     }

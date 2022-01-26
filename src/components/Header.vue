@@ -152,13 +152,17 @@ export default {
         };
         .social-nav i {
             padding: 0 0.5em;
+            cursor: pointer;
         }
     }
     .header-navbar {
         padding: 1em 0;
-        .navbar .logo img {
-            height: 45px;
-        };
+        .navbar .logo {
+            cursor: pointer;
+            img {
+                height: 45px;
+            };
+        }
         .btn {
             padding: 0.8em 3em;
             color: white;
@@ -166,9 +170,13 @@ export default {
             background-image: linear-gradient(to right, #96E15F , #0CDAA2);
             box-shadow: 5px 10px 18px 5px #D2F8EF;
         };
+        .btn:hover {
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
+        }
         i {
             margin-left: 2em;
             color: #00D9A6;
+            cursor: pointer;
         }
     }
     .navbar-nav {
@@ -176,11 +184,21 @@ export default {
         li {
             padding: 1.3em;
             font-size: 0.9em;
+            border-radius: 20px;
             a {
                 text-decoration: none;
                 color: black;
             }
+            transition: all 0.2s;
         }
+        li:hover {
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
+            background-color: rgba($color: #c5c5c5, $alpha: 0.3);
+        }
+        li:hover a {
+            color: #0E0E0E;
+        }
+            
     }
     .background-0 {
             background-image: url(../assets/img/Group-36-2x.png);
@@ -221,6 +239,10 @@ export default {
                 border-radius: 2em;
                 margin-top: 5em;
             };
+            .btn:hover {
+                background-image: $black-gradient;
+                color: white !important;
+            }
             .jumbo-social {
                 padding-top: 8em;
                 a {
