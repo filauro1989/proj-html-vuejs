@@ -55,9 +55,7 @@
         </div>
         <!-- slider sfondo -->
         <div class="jumbo-selector d-inline">
-            <div class="selector-one">01</div>
-            <div class="selector-two active">02</div>
-            <div class="selector-three">03</div>
+            <div v-for="(selector, index) in selectors" :key="index+'id'" @click="changeJumbo(index)" :class="(counter == index) ? 'active' : ''"> {{selector}} </div>
         </div>
     </div>
 </template>
@@ -67,6 +65,7 @@ export default {
     name: 'Header',
     data() {
         return {
+            counter: 0,
             navlist:[
 
                 {
@@ -94,6 +93,11 @@ export default {
                     url: '#',
                 },
             ],
+            selectors: [
+                '1',
+                '2',
+                '3',
+            ],
             social: [
                 {
                     name: 'Facebook',
@@ -111,18 +115,22 @@ export default {
                     name: 'Twitter',
                     url: '#',
                 },
+            ],
+            // USO IL REQUIRE PERCHE' NN FUNZIONA SE METTO IL LINK NELLA FUNZIONE
+            images: [
+                require('../assets/img/Group-35-2x.png'),
+                require('../assets/img/Group-36-2x.png'),
+                require('../assets/img/Group-40-2x.png'),
             ]
         }
     },
     methods: {
-        changeJumbo() {
+        changeJumbo(index) {
+            this.counter = index;
             let jumbotron = document.querySelector('.jumbotroner');
-            console.log(jumbotron);
-            if (jumbotron.classList.contains('background-0')) {
-                jumbotron.classList.remove('background-0');
-                jumbotron.classList.add('background-1');
-            }
-        }
+            let backImage = this.images[index];
+            jumbotron.style.backgroundImage = `url(${backImage})`;
+        },
     },
 }
 </script>

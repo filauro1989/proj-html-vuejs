@@ -12,16 +12,10 @@
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated theu live in Bookmarksgrove.</p>
             </div>
         </div>
-        <div class="showroom w-85 mx-auto position-relative">
-
-            <img class="" src="../assets/img/ina-soulis-227104-unsplash-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/355H-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/business-competition-PB366D8-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="">
-            <img class="" src="../assets/img/cody-davis-253928-unsplash-1024x1024.jpg" alt="">
+        <div class="showroom w-85 mx-auto position-relative d-flex flex-wrap">
+            <div v-for="(image, index) in showcase" :key="index" class="showroom-img-box">
+                <img class="" :src="image.url" alt="">
+            </div>
 
             <div class="rotated-text position-absolute rotate">17 years of experience helping people for best solutions</div>
             
@@ -37,6 +31,53 @@
 <script>
 export default {
     name: 'Thirdform',
+    data() {
+        return {
+            showcase: [
+
+                {
+                    url: require('../assets/img/ina-soulis-227104-unsplash-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/sunisa-misa-531163-unsplash-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/355H-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/photo-1448932252197-d19750584e56-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/business-competition-PB366D8-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/aa9a4539-PQGJ7HU-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+                {
+                    url: require('../assets/img/cody-davis-253928-unsplash-1024x1024.jpg'),
+                    info: 'Marketing',
+                    name: 'A Famous Ferring Wheel',
+                },
+            ]
+        }
+    },
 }
 </script>
 
@@ -54,10 +95,36 @@ export default {
             margin-left: 20px;
             margin-bottom: 0;
         };
-        .showroom img {
-            border-radius: 5px;
-            padding: 0.2em 0.2em;
+        .showroom .showroom-img-box{
             width: calc(25% - 1em);
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            transition: transform 0.2s;
+            border-radius: 10px;
+            margin: 0.2em 0.2em;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .showroom-img-box:hover {
+            transform: scale(1.1);
+            z-index: 3;
+
+        }
+        .showroom-img-box:hover:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top right, rgba(150,225,95, 0.8) , rgba(12,218,162, 0.8));
+        }
+        .showroom img:hover {
         }
         .btn {
             box-shadow: 0px 0px 46px rgba(0, 0, 0, .2);
